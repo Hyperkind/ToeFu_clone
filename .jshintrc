@@ -1,0 +1,9 @@
+{
+  "globals" : {
+    "window" : true,
+    "ToeFu_Clone" : true,
+    "Phaser" : true
+  },
+  "undef" : true,
+  "unused" : true
+}
