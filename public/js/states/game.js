@@ -8,6 +8,8 @@ ToeFu_Clone.Game = function() {
 
 ToeFu_Clone.Game.prototype.create = function() {
 
+  console.log('Game state create()');
+
 };
 
 ToeFu_Clone.Game.prototype.update = function() {
