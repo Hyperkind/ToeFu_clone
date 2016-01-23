@@ -14,7 +14,14 @@
     RIGHT : 1
   };
 
+  function select_sprite_row (player_id) {
+    return function (frame_id) {
+      return frame_id + player_id * ToeFu_Clone.ASSETS.SPRITESHEET.PLAYER.frames_per_row;
+    };
+  }
+
   // sprite class constructor
+  // @id is 0 index based
   ToeFu_Clone.Player = function (game, id, name) {
     this.game = game;
     this.id = id;
@@ -24,8 +31,10 @@
     // super constructor call
     Phaser.Sprite.call(this, game, 0, 0, ToeFu_Clone.ASSETS.SPRITESHEET.PLAYER.name);
 
-    // set animations
-    this.animations.add(ANIMATIONS.IDLE.name, ANIMATIONS.IDLE.frames);
+    // set center registration point
+    this.anchor = { x : 0.5, y : 0.5};
+
+    this.animations.add(ANIMATIONS.IDLE.name, ANIMATIONS.IDLE.frames.map(select_sprite_row(this.id)));
 
     // play the initial animation
     this.animations.play(ANIMATIONS.IDLE.name, ANIMATIONS.IDLE.fps, true);
