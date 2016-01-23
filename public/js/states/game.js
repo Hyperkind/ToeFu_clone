@@ -34,6 +34,15 @@
 
   ToeFu_Clone.Game.prototype.update = function() {
 
+    // set facing direction
+    if ( this.player_1.x < this.player_2.x ){ // player 1 is on the left side
+      this.player_1.facing = ToeFu_Clone.Player.FACING.RIGHT;
+      this.player_2.facing = ToeFu_Clone.Player.FACING.LEFT;
+    } else { // player 1 is on the right side
+      this.player_1.facing = ToeFu_Clone.Player.FACING.LEFT;
+      this.player_2.facing = ToeFu_Clone.Player.FACING.RIGHT;
+    }
+
   };
 
   ToeFu_Clone.Game.prototype.shutdown = function() {
