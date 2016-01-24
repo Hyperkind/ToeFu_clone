@@ -61,5 +61,31 @@
 
   };
 
+  // Input actions
+  ToeFu_Clone.Player.prototype.jump = function ( ) {
+
+  };
+
+  ToeFu_Clone.Player.prototype.dive = function ( ) {
+
+  };
+
+  ToeFu_Clone.Player.prototype.dive_stop = function ( ) {
+
+  };
+
+  ToeFu_Clone.Player.prototype.step_left = function ( ) {
+
+  };
+
+  ToeFu_Clone.Player.prototype.step_right = function ( ) {
+
+  };
+
+  // stop stepping left or right
+  ToeFu_Clone.Player.prototype.stop = function ( ) {
+
+  };
+
 })();
 

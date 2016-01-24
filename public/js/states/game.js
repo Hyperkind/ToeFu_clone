@@ -6,7 +6,7 @@
     // player 1
     { x : 100, y : 100 },
     // player 2
-    { x : 600, y : 100 }
+    { x : 800, y : 100 }
   ];
 
   // class constructor
@@ -30,6 +30,9 @@
     this.player_2.x = INITIAL_POSITIONS[1].x;
     this.player_2.y = INITIAL_POSITIONS[1].y;
 
+    // initialize input handler
+    this.input = new ToeFu_Clone.GameInput(this);
+
   };
 
   ToeFu_Clone.Game.prototype.update = function() {
@@ -46,6 +49,11 @@
   };
 
   ToeFu_Clone.Game.prototype.shutdown = function() {
+
+  };
+
+  // Input actions
+  ToeFu_Clone.Game.prototype.continue = function() {
 
   };
 
