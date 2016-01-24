@@ -25,7 +25,7 @@ ToeFu_Clone.ASSETS = {
   IMAGE : {
     BG : {
       name : 'bg',
-      path : 'assets/graphics/bg_900x600.jpg',
+      path : 'assets/graphics/Suzaku_Temple_900x600.png',
       width : 900,
       height : 600
     }

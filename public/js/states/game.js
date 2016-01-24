@@ -34,7 +34,7 @@
     this.match_state;
   };
 
-  ToeFu_Clone.Game.FLOOR_Y = 400;
+  ToeFu_Clone.Game.FLOOR_Y = 470;
 
   ToeFu_Clone.Game.prototype.create = function() {
 
